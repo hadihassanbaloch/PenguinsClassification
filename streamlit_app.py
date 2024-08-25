@@ -23,3 +23,5 @@ with st.expander("Data Visualization"):
 #"species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
 with st.sidebar:
   st.header("Input Features")
+  island = st.selectbox("Islands", ("Torgersen", "Biscoe", "Dream"))
+  st.write("You have selected", island)
