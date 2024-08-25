@@ -15,3 +15,7 @@ with st.expander("View the Data"):
   st.write("**Target**")
   y = df.species
   y
+with st.expander("Data Visualization"):
+  st.write("** ScatterPlot to compare difference in body length with body mass based on species**")
+  st.scatter_plot(data=df, x='bill_length_mm', y='body_mass_g',  color='species')
+                  
