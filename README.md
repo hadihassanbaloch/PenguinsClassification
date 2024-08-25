@@ -1,7 +1,6 @@
 # 🤖 Machine Learning App
 
-
-This is machine learning app
+### This is machine learning app to predict the Penguins species based on it's feature.
 
 ## Demo App
 
@@ -11,13 +10,7 @@ This is machine learning app
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
 
-## Section Heading
 
-This is filler text, please replace this with text for this section.
 
-## Further Reading
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+
