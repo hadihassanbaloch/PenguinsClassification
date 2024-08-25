@@ -20,13 +20,11 @@ with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g',  color='species')
   
 #Data preparation
-#,"flipper_length_mm","body_mass_g",
+
 with st.sidebar:
   st.header("**Input Features**")
   island = st.selectbox("Islands", ("Torgersen", "Biscoe", "Dream"))
   st.write("You have selected:", island)
-  gender = st.selectbox("Gender", ("Male", "Female"))
-  st.write("You have selected:", gender)
   bill_length_mm = st.slider("Bill length (mm):", 32.1,59.6, 43.1)
   st.write("You have selected:", bill_length_mm )
   bill_depth_mm = st.slider(" Bill depth (mm): ",13.1, 21.5,17.2)
@@ -35,3 +33,16 @@ with st.sidebar:
   st.write("You have selected:",  flipper_length_mm)
   body_mass_g = st.slider('Body mass (g)', 2700.0, 6300.0, 4207.0)
   st.write("You have selected:",  body_mass_g)
+  gender = st.selectbox("Gender", ("Male", "Female"))
+  st.write("You have selected:", gender)
+
+data = {
+  "island": island,
+  "bill_length_mm": bill_length_mm,
+  "bill_depth_mm" : bill_depth,
+  "flipper_length_mm" : flipper_length_mm,
+  "body_mass_g":body_mass_g,
+  "sex": gender
+}
+input_data = pd.DataFrame(data, index=[0])
+input_penguins = pd.concat([input_data, X], axis=0)
