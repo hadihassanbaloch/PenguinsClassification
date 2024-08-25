@@ -10,8 +10,8 @@ with st.expander("View the Data"):
   df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv")
   df
   st.write("**Features**")
-  X = df.drop("speices",axis=1)
+  X = df.drop("species",axis=1)
   X
   st.write("**Target**")
-  y = df['speices']
+  y = df.species
   y
