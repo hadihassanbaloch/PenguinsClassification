@@ -20,11 +20,11 @@ with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g',  color='species')
   
 #Data preparation
-"bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g",
+#"bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g",
 with st.sidebar:
   st.header("**Input Features**")
   island = st.selectbox("Islands", ("Torgersen", "Biscoe", "Dream"))
   st.write("You have selected:", island)
   gender = st.selectbox("Gender", ("Male", "Female"))
   st.write("You have selected:", gender)
-  bill_length_mm = st.slider("Select a range from:" 32.1,59.6, 43.1)
+  bill_length_mm = st.slider("Select a range from:", 32.1,59.6, 43.1)
