@@ -1,7 +1,7 @@
 # 🤖 Machine Learning App
 
- This is machine learning app to predict the Penguins species based on feature you provide.
- Fun and interactive  way  to know how we can  determine the penguins species based on its features.
+ This is machine learning app to predict the Penguins species based on feature you provide.<br>
+ Fun and interactive  way  to know how we can  determine the penguins species based on its features.<br>
  Created and Deployed with streamlit.com
 
 ## Demo App
