@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
 
-st.title('🤖 Machine Learning App')
+st.title('🤖 Machine learning module')
 
 st.info('This app is to create a machine learning model')
 
